@@ -1,0 +1,148 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+.header{
+	width: 100%;
+	height: 150px;
+	background: rgba(22, 22, 29, 1);
+	position: absolute;
+	position: fixed;
+	z-index: 10;
+	transition: all 0.2s ease-in-out;
+
+
+}
+
+.section-header{
+	height: 75px;
+	width: 100%;
+	background: rgba(22, 22, 29, 1);
+	position: fixed;
+	/*position: fixed;*/
+	z-index: 9;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+
+
+
+.div-header-container{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.logo-main{
+	color: white;
+	font-size: 50px;
+}
+
+.navigation{
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	font-weight: bold;
+}
+
+.navigation-combine{
+	color: #c6833d;
+}
+
+
+h1{
+	margin-right: 600px;
+	/*margin-bottom: 300px;*/
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Caveat', cursive;
+	font-weight: bold;
+	/*transition: all 0.5s ease;*/
+	transform: translateY(50px);
+
+
+	animation-name: TextMain;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-direction: forwards;
+	animation-play-state: running;
+
+}
+
+
+@keyframes TextMain{
+	0%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 0.7;
+		/*transform: translateY(-20px);*/
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(20px);
+	}
+}
+
+
+.section-one{
+	height: 100vh;
+	width: 100%;
+	/*background-color: red;*/
+	background-image: url(../images/MercedesMain.jpg);
+	background-size: 100%;
+	background-position: center;
+	/*background-attachment: fixed;*/
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*font-size: 100px;*/
+
+	animation-name: BackgroundMain;
+	animation-duration: 10s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-direction: forwards;
+	animation-play-state: running;
+
+}
+
+@keyframes BackgroundMain{
+
+	0%{
+		background-size: 100%;
+	}
+
+	50%{
+		background-size: 105%;
+	}
+
+	100%{
+		background-size: 105%;
+	}
+
+}	
+
+.section-two{
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(22, 22, 29, 1);
+}
