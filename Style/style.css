@@ -156,7 +156,7 @@ h1{
 	padding: 0 20px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
 }
 
 .car-combine{
@@ -165,7 +165,34 @@ h1{
 	background-color: white;
 }
 
+.paragraph-container{
+	/*height: 400px;
+	width: 700px;*/
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: center;*/
+	/*justify-content: space-around;
+	flex-direction: column;*/
+	/*text-align: center;*/
+}
 
+.paragraph-one{
+	width: 100%;
+	margin-top: 5%;
+	font-size: 30px;
+	text-align: center;
+}
+
+.paragraph-two{
+	width: 550px;
+	height: 200px;
+	font-size: 15px;
+	/*width: 100%;*/
+	align-items: center;
+	display: flex;
+	line-height: 25px;
+}
 
 
 
@@ -174,22 +201,27 @@ h1{
 	background-size: 110%;
 	background-repeat: no-repeat;
 	background-position: center;
+	margin-left: 8%;
+	margin-right: 5%;
+
+	animation-name: mercedes-image;
+	
 }
 
-.beemer{
+/*.beemer{
 	background-image: url(../images/beemer.jpg);
 	background-size: 120%;
 	background-repeat: no-repeat;
 	background-position: center;
 
-	/*transform: translateX(-150px);
+	transform: translateX(-150px);
 	animation-duration: 2s;
 	animation-fill-mode: both;
 
-	animation-name: beemer-animation;*/
+	animation-name: beemer-animation;
 }
 
-/*@keyframes beemer-animation{
+@keyframes beemer-animation{
 
 	0%{
 		transform: translateX(10px);
@@ -198,7 +230,7 @@ h1{
 	100%{
 		transform: translateX(150px);
 	}
-}*/
+}
 
 .audi{
 	background-image: url(../images/audi2.jpg);
@@ -212,4 +244,4 @@ h1{
 	background-size: 220%;
 	background-repeat: no-repeat;
 	background-position: center;
-}
+}*/
