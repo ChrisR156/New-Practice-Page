@@ -59,7 +59,7 @@ body{
 
 
 h1{
-	margin-right: 600px;
+	margin-right: 650px;
 	/*margin-bottom: 300px;*/
 	text-align: center;
 	font-size: 100px;
@@ -288,6 +288,199 @@ h1{
 }	
 
 
+/************Section-Three*************/
+
+.section-three{
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(22, 22, 29, 1);
+	display: flex;
+	align-items: center;
+	padding: 10px 80px;
+	position: relative;
+}
+
+.div-container-left{
+	height: 400px;
+	width: 50%;
+	/*background-color: red;*/
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	z-index: 5;
+}
+
+.section-three-title{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	margin-left: 80px;
+}
+
+.description-one{
+	font-size: 15px;
+	color: white;
+}
+
+
+
+.product-css{
+	height: 80%;
+	width: 500px;
+	transform: skew(-10deg);
+	background-color: red;
+	position: relative;
+	z-index: 1;
+}
+
+.economy{
+	background-color: blue;
+	/*width: 500px;*/
+	position: absolute;
+	z-index: 1;
+	margin-left: 25%;
+	transform: translatex(-300px) skew(-10deg);
+	/*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+
+
+
+	/*animation-name: economy-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: .8s;
+	animation-direction: forwards;
+	animation-play-state: running;*/
+
+}
+
+@keyframes economy-animation{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0px) skew(-10deg);
+	}
+}
+
+.executive{
+	position: absolute;
+	z-index: 2;
+	margin-left: 35%;
+	background-color: indigo;
+	transform: translatex(-300px) skew(-10deg);
+	/*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+
+
+
+	/*animation-name: executive-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: .6s;
+	animation-direction: forwards;
+	animation-play-state: running;*/
+}
+
+.executive.slide-right-executive:hover{
+	z-index: 5;
+}
+
+@keyframes executive-animation{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0px) skew(-10deg);
+	}
+}
+
+.business{
+	position: absolute;
+	z-index: 3;
+	margin-left: 45%;
+	background-color: silver;
+	background-image: url(../images/e.jpg);
+	background-position: 75%;
+	background-size: 180%;
+	background-repeat: no-repeat;
+	transform: translatex(-300px) skew(-10deg);
+	/*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+
+
+
+	/*animation-name: business-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: .4s;
+	animation-direction: forwards;
+	animation-play-state: running;*/
+}
+
+.business.slide-right-business:hover{
+	z-index: 5;
+}
+
+@keyframes business-animation{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0px) skew(-10deg);
+	}
+}
+
+.luxury{
+	position: absolute;
+	z-index: 4;
+	margin-left: 55%;
+	background-color: cyan;
+	background-image: url(../images/s.jpeg);
+	background-size: 220%;
+	background-repeat: no-repeat;
+	background-position: 58% ;
+	transform: translatex(-300px) skew(-10deg);
+	/*skew image position how*/
+	/*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+
+
+
+
+	/*animation-name: luxury-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-direction: forwards;
+	animation-play-state: running;*/
+}
+
+@keyframes luxury-animation{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0px) skew(-10deg);
+	}
+}
+
+
+
+/************JAVASCRIPT*************/
+
 .js-scroll {
   opacity: 0;
   transition: opacity 500ms;
@@ -349,6 +542,50 @@ h1{
 	animation-direction: forwards;
 	animation-play-state: running;
 
+}
+
+.scrolled.slide-right-luxury {
+  	animation: luxury-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-direction: forwards;
+	animation-play-state: running;
+}
+
+.scrolled.slide-right-business {
+  	animation: business-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: .4s;
+	animation-direction: forwards;
+	animation-play-state: running;
+}
+
+.scrolled.slide-right-executive {
+  	animation: executive-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: .6s;
+	animation-direction: forwards;
+	animation-play-state: running;
+}
+
+.scrolled.slide-right-economy {
+  	animation: economy-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-delay: .8s;
+	animation-direction: forwards;
+	animation-play-state: running;
 }
 
 .scrolled.slide-right {
