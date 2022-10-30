@@ -293,6 +293,7 @@ h1{
 .section-three{
 	height: 100vh;
 	width: 100%;
+	/*background-color: white;*/
 	background-color: rgba(22, 22, 29, 1);
 	display: flex;
 	align-items: center;
@@ -302,20 +303,46 @@ h1{
 
 .div-container-left{
 	height: 400px;
-	width: 50%;
+	width: 70%;
 	/*background-color: red;*/
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
-	z-index: 5;
+	z-index: 999;
+	pointer-events: none;
 }
 
 .section-three-title{
 	font-size: 30px;
 	color: white;
 	text-align: center;
-	margin-left: 80px;
+	margin-left: 20px;
+	font-size: 60px;
+	transform: translateY(-100px);
+
+	/*animation: three-title;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: forwards;
+  animation-play-state: running;*/
+
 }
+
+@keyframes three-title{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(-30px);
+	}
+}
+
+
 
 .description-one{
 	font-size: 15px;
@@ -333,18 +360,22 @@ h1{
 	z-index: 1;
 }
 
-.economy{
+.compact{
 	background-color: blue;
 	/*width: 500px;*/
 	position: absolute;
 	z-index: 1;
-	margin-left: 25%;
+	margin-left: 10%;
+	filter: brightness(.7);
+	box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
 	transform: translatex(-300px) skew(-10deg);
 	/*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
 
 
 
-	/*animation-name: economy-animation;
+	/*animation-name: compact-animation;
 	animation-duration: 2.5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: both;
@@ -352,10 +383,27 @@ h1{
 	animation-delay: .8s;
 	animation-direction: forwards;
 	animation-play-state: running;*/
-
+	overflow: hidden;
+	transform-origin: top left;
 }
 
-@keyframes economy-animation{
+.compact-car-img{
+	background-image: url(../images/a1.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  width: 125%;
+  height: 100%;
+  transform: skew(10deg) translate(-72px);
+}
+
+
+.compact:hover{
+	z-index: 5;
+	filter: brightness(.9);
+}
+
+@keyframes compact-animation{
 	0%{
 		opacity: 0;
 	}
@@ -369,8 +417,19 @@ h1{
 .executive{
 	position: absolute;
 	z-index: 2;
-	margin-left: 35%;
+	margin-left: 25%;
 	background-color: indigo;
+	filter: brightness(.7);
+	box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+	/*box-shadow: -1px 23px 25px 24px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 23px 25px 24px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 23px 25px 24px rgba(0,0,0,0.75);*/
+	/*box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);*/
+	/*filter: brightness(.9);*/
 	transform: translatex(-300px) skew(-10deg);
 	/*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
 
@@ -384,11 +443,27 @@ h1{
 	animation-delay: .6s;
 	animation-direction: forwards;
 	animation-play-state: running;*/
+	overflow: hidden;
+	transform-origin: top left;
 }
 
-.executive.slide-right-executive:hover{
-	z-index: 5;
+.executive-car-img{
+	background-image: url(../images/c.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  width: 125%;
+  height: 100%;
+  transform: skew(10deg) translate(-72px);
 }
+
+
+.executive:hover{
+	z-index: 5;
+	filter: brightness(.9);
+}
+
+
 
 @keyframes executive-animation{
 	0%{
@@ -404,12 +479,26 @@ h1{
 .business{
 	position: absolute;
 	z-index: 3;
-	margin-left: 45%;
+	margin-left: 42%;
 	background-color: silver;
-	background-image: url(../images/e.jpg);
+	filter: brightness(.7);
+	box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+	/*box-shadow: -1px 23px 25px 24px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 23px 25px 24px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 23px 25px 24px rgba(0,0,0,0.75);*/
+	/*box-shadow: -2px 5px 38px 24px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 5px 38px 24px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 5px 38px 24px rgba(0,0,0,0.75);*/
+	/*box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);*/
+	/*filter: brightness(.9);*/
+	/*background-image: url(../images/e.jpg);
 	background-position: 75%;
 	background-size: 180%;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	transform: translatex(-300px) skew(-10deg);
 	/*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
 
@@ -423,10 +512,24 @@ h1{
 	animation-delay: .4s;
 	animation-direction: forwards;
 	animation-play-state: running;*/
+	overflow: hidden;
+	transform-origin: top left;
+}
+
+.business-car-img{
+	background-image: url(../images/e.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 125%;
+  height: 100%;
+  transform: skew(10deg) translate(-72px);
 }
 
 .business.slide-right-business:hover{
 	z-index: 5;
+
+	filter: brightness(.9);
 }
 
 @keyframes business-animation{
@@ -443,12 +546,16 @@ h1{
 .luxury{
 	position: absolute;
 	z-index: 4;
-	margin-left: 55%;
+	margin-left: 58%;
 	background-color: cyan;
-	background-image: url(../images/s.jpeg);
+	box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -19px 13px 50px 0px rgba(0,0,0,0.75);
+	filter: brightness(1.1);
+	/*background-image: url(../images/s.jpeg);
 	background-size: 220%;
 	background-repeat: no-repeat;
-	background-position: 58% ;
+	background-position: 58% ;*/
 	transform: translatex(-300px) skew(-10deg);
 	/*skew image position how*/
 	/*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
@@ -464,6 +571,35 @@ h1{
 	animation-delay: 0s;
 	animation-direction: forwards;
 	animation-play-state: running;*/
+	overflow: hidden;
+	transform-origin: top left;
+}
+
+.luxury-car-img{
+	background-image: url(../images/s2.jpg);
+  background-size: 135%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  width: 125%;
+  height: 100%;
+  transform: skew(10deg) translate(-72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.luxury-paragraph{
+	height: 80%;
+	width: 75%;
+	/*height: 500px;
+	width: 400px;*/
+	background-color: black;
+	opacity: .7;
+	border-radius: 10px;
+	margin-left: 3.5%;
+	transform: skew(-10deg);
+	display: flex;
+	justify-content: center;
 }
 
 @keyframes luxury-animation{
@@ -477,6 +613,24 @@ h1{
 	}
 }
 
+.luxury-paragraph-title{
+	height: 50px;
+	width: 200px;
+	background-color: black;
+	font-size: 40px;
+	color: #c6833d;
+	opacity: 1;
+	transform: skew(10deg);
+	text-align: center;
+	margin-top: 18%;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	border: 2px solid #c6833d;
+}
+
 
 
 /************JAVASCRIPT*************/
@@ -488,6 +642,21 @@ h1{
 
 .js-scroll.scrolled {
   opacity: 1;
+}
+
+.scrolled.slide-top-three-title{
+	animation: three-title;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.1s;
+  animation-direction: forwards;
+  animation-play-state: running;
+}
+
+.scrolled.slide-top {
+  animation: fade-in 1s ease-in-out both;
 }
 
 .scrolled.fade-in {
@@ -577,8 +746,8 @@ h1{
 	animation-play-state: running;
 }
 
-.scrolled.slide-right-economy {
-  	animation: economy-animation;
+.scrolled.slide-right-compact {
+  	animation: compact-animation;
 	animation-duration: 2.5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: both;
